@@ -36,7 +36,10 @@ Exported Values and Methods
 #### environment requirements
 
 * `PORT` - 3000
+
 * `MONGODB_URI` - mongodb://localhost:27017/bookAppV2
+
+* `DATABASE_URL`- postgres://localhost:5432/books_app
 
 Install dependancies
 
@@ -44,7 +47,9 @@ Install dependancies
 
 Running the app
 
-`npm start`
+* Mongo: `npm start mongo`
+
+* Postgres: `npm start anything else`
 
 
 ### Endpoints
