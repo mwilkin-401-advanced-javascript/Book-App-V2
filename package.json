@@ -4,8 +4,7 @@
   "description": "Application that will allow users to upload and review books",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js",
+    "start": "nodmon idex.js",
     "lint": "eslint \"**/*.js\"",
     "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose --coverage",
