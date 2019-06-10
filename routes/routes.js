@@ -2,7 +2,7 @@
 
 const express = require('express');
 const appRouter = express.Router();
-const db = require('./pg.js');
+const db = require('../db/pg.js');
 // let db;
 
 // const args = process.argv.slice(2);
