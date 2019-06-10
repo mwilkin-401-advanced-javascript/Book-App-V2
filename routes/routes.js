@@ -2,21 +2,19 @@
 
 const express = require('express');
 const appRouter = express.Router();
-const db = require('../db/pg.js');
-// let db;
+// const db = require('../db/pg.js');
+let db;
 
-// const args = process.argv.slice(2);
+const args = process.argv.slice(2);
 
-// if(args[0] === 'mongo'){
-//   db = require('../data/mongo/mongo.js');
-//   console.log('running mongo');
+if(args[0] === 'mongo'){
+  db = require('../db/mongo.js');
+  console.log('running mongo');
 
-// } else {
-//   db = require('./pg.js');
-//   console.log('running in pg');
-
-// }
-
+} else {
+  db = require('../db/pg.js');
+  console.log('running in pg');
+}
 
 // API Routes
 appRouter.get('/', db.getBooks);
