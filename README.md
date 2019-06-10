@@ -27,6 +27,7 @@ method-override
 pg
 superagent
 mongoose
+morgan
 
 
 Modules
