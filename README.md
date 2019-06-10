@@ -26,6 +26,8 @@ express
 method-override
 pg
 superagent
+mongoose
+
 
 Modules
 

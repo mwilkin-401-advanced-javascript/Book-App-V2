@@ -20,6 +20,7 @@
     "elint": "^1.11.1",
     "express": "^4.16.2",
     "method-override": "^3.0.0",
+    "mongoose": "^5.5.14",
     "pg": "^7.3.0",
     "superagent": "^3.8.3"
   }
