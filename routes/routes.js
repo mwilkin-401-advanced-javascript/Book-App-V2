@@ -1,17 +1,22 @@
 'use strict';
 
+const express = require('express');
+const appRouter = express.Router();
+const db = require('./pg.js');
+
+
 // API Routes
-app.get('/', getBooks);
-app.post('/searches', createSearch);
-app.get('/searches/new', newSearch);
-app.get('/books/:id', getBook);
-app.post('/books', createBook);
-app.put('/books/:id', updateBook);
-app.delete('/books/:id', deleteBook);
+appRouter.get('/', getBooks);
+appRouter.post('/searches', createSearch);
+appRouter.get('/searches/new', newSearch);
+appRouter.get('/books/:id', getBook);
+appRouter.post('/books', createBook);
+appRouter.put('/books/:id', updateBook);
+appRouter.delete('/books/:id', deleteBook);
 
-app.get('*', (request, response) => response.status(404).send('This route does not exist'));
+appRouter.get('*', (request, response) => response.status(404).send('This route does not exist'));
 
-module.exports = app;
+module.exports = appRouter;
 
 
 
