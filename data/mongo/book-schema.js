@@ -1,6 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
+require('./bookshelves-model.js');
 
 const books = mongoose.Schema({
   title: {type: String, required: true},
