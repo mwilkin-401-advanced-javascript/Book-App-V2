@@ -4,13 +4,12 @@
   "description": "Application that will allow users to upload and review books",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "lint": "eslint **/*.js",
+    "start": "nodmon idex.js",
+    "lint": "eslint \"**/*.js\"",
     "test": "jest --verbose --coverage",
     "test-watch": "jest --watchAll --verbose --coverage",
     "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json",
-    "seed": "psql -d book_app -f seedDB.sql"
+    "seedlocal": "psql -d book_appv2 -f ./data/pg/schema.sql"
   },
   "keywords": [],
   "author": "Code Fellows, LLC & Matt Wilkin",
@@ -21,6 +20,8 @@
     "elint": "^1.11.1",
     "express": "^4.16.2",
     "method-override": "^3.0.0",
+    "mongoose": "^5.5.14",
+    "morgan": "^1.9.1",
     "pg": "^7.3.0",
     "superagent": "^3.8.3"
   }

@@ -11,11 +11,24 @@ Book App refactored from Postgres(SQL) to Mondo(noSQL) for data storage and modu
 
 [travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-10)
 
+[heroku](https://secret-eyrie-61196.herokuapp.com/)
+
+[UML]()
+
 ### Documentation
 
 Dependencies
 jest
-lint
+eslint
+dotenv
+ejs
+express
+method-override
+pg
+superagent
+mongoose
+morgan
+
 
 Modules
 
@@ -23,11 +36,46 @@ Exported Values and Methods
 
 ### Setup
 
+#### environment requirements
+
+* `PORT` - 3000
+
+* `MONGODB_URI` - mongodb://localhost:27017/bookAppV2
+
+* `DATABASE_URL`- postgres://localhost:5432/books_app
+
+Install dependancies
+
+`npm install`
+
 Running the app
-npm start
+
+* Mongo: `npm start mongo`
+
+* Postgres: `npm start anything else`
+
+
+### Endpoints
+
+* Endpoint: GET `'/'` -> Show all
+
+* Endpoint: POST `'/searches'` -> Create search
+
+* Endpoint: GET `'/searches/new'` -> New search
+
+* Endpoint: GET `'/books/:id'` -> Get certain book
+
+* Endpoint: POST `'/books'` -> Create book
+
+* Endpoint: PUT `'/books/:id'` -> Update certain book
+
+* Endpoint: DELETE `'/books/:id'` -> Delete certain book
+
 
 ### Tests
+
 How do you run tests?
+
 npm test
 
 What assertions were made?
